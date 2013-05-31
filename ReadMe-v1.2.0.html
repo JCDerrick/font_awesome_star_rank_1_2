@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FONT AWESOME STAR RANK - Fieldtype for ExpressionEngine 2.x</title>
+<link rel="stylesheet" type="text/css" href="themes/third_party/font_awesome_star_rank/font-awesome/css/font-awesome.min.css" />
+<style type="text/css" >
+/*Star Ratings*/
+.font_awesome_star_rank {
+text-align:center;
+margin: 0px auto;
+padding:0px;
+width:120px;
+position: relative;
+font-size:20px;
+color:#e9b31b;
+color: rgba(233,179,27, 0.8);
+text-shadow: 1px -4px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+}
+.font_awesome_star_rank i {padding:0 .5px;}
+</style>
+</head>
+<body>
+
+<p>## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##<br />
+  ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##<br />
+  ## <span class="font_awesome_star_rank"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half-full"></i><i class="icon-star-empty"></i></span> <span class="font_awesome_star_rank"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></span> <span class="font_awesome_star_rank"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span><br />
+  ## @name	<strong>FONT AWESOME STAR RANK - Fieldtype for ExpressionEngine 2.x</strong> <br />
+  ##<br />
+  ## @required	Font Awesome 3.1.0 or higher is required for use with this add-on. A free plugin is included with version 1.2+<br />
+  ## <br />
+  ## @package	ExpressionEngine 2.x<br />
+  ## @subpackage	Fieldtypes<br />
+  ## @category	Fieldtypes<br />
+  ##<br />
+  ## @editor    	John C. Derrick &lt;john@ecowai.com&gt;<br />
+  ## @copyright 	Copyright (c) 2013 Ecowai, LLC - http://www.johncderrick.com<br />
+  ## <br />
+  ## @license   	http://creativecommons.org/licenses/by-sa/3.0/ Attribution-Share Alike 3.0 Unported<br />
+  ## <br />
+  ## @author 	Originally released under CC-AS 3.0 by Max Lazar as 'MX Stars Field' - www.eec.ms<br />
+  ## <br />
+  ## @updated 	Includes Font Awesome integration along with other general improvements.<br />
+  ## @version	v1.2 - published May 30, 2013<br />
+  ##<br />
+  ## @updates 	http://www.johncderrick.com/ or Git at https://github.com/JCDerrick/font-awesome-star-rank<br />
+  ##<br />
+  ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##<br />
+  ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </p>
+<p><strong>## Description</strong></p>
+<p><strong><em>An Expression Engine Fieldtype.</em></strong></p>
+<p>Font Awesome Star Rank is a fieldtype that providers publishers the ability to add a simple star rating input field to their entries. On the 'front end' the field type will output as a simple and easily styled Bootstrap friendly star ranking.</p>
+<p>Star Rank Font Awesome is compatible with Pixel &amp; Tonic's Matrix fieldtype.</p>
+<p>Font Awesome 3.1.0 or higher is required for use with this add-on! A free plugin is included with version 1.2+</p>
+<p>## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##<br />
+  ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </p>
+<p><strong>## INSTALLATION WITHIN EE</strong></p>
+<p>* Unzip and upload the folder system/expressionengine/third_party/font_awesome_star_rank/ to your /system/expressionengine/third_party/ folder.<br />
+  * Upload the folder themes/third_party/font_awesome_star_rank/ to your /themes/third_party/ folder.<br />
+  * Go to Add-Ons Fieldtypes and click Install next to the fieldtype Font Awesome Star Rank<br />
+  * Add the fieldtype to your channel field group that you want to include a star rating with font awesome output</p>
+<p>## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##<br />
+  ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </p>
+<p><strong>## OUTPUT WITHIN TEMPLATES</strong></p>
+<p>You will need to ensure you have Font Awesome 3.1.0 (it's included with this Add-On's complementary Plugin) or higher to use this Add-On.</p>
+<p>* If you do not already have Font Awesome loaded within your site, you can easily include the following tag to quickly load Font Awesome within your site:<br />
+  {exp:font_awesome_star_rank_css}</p>
+<p>To output your ratings, simply include your fieldtype name, i.e.; {my_star_rank_field_name}, inside the regular Channel Entries loop within any template you wish to include the ranking. The stars will automatically be output within a span container called 'font_awesome_star_rank' (i.e.; &lt;span class=&quot;font_awesome_star_rank&quot;&gt; ***** &lt;/span&gt;) and can be styled accordingly with your local CSS file. Here is an example that will results in gold/yellow stars on your web site:</p>
+<blockquote>
+  <p>/*Star Ratings*/<br />
+    <em>.font_awesome_star_rank {<br />
+    text-align:center;<br />
+    margin: 0px auto;<br />
+    padding:0px;<br />
+    width:120px;<br />
+    position: relative;<br />
+    font-size:20px;<br />
+    color:#e9b31b;<br />
+    color: rgba(233,179,27, 0.8);<br />
+    text-shadow: 1px -4px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;<br />
+    }<br />
+    .font_awesome_star_rank i {padding:0 .5px;}</em></p>
+</blockquote>
+<p>## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##<br />
+  ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </p>
+<p><strong>## UPDATE &amp; CHANGE LOG</strong></p>
+<p>1.2.0 - released May 30, 2013 : Included Font Awesome 3.1.0 with a complementary Plugin</p>
+<p>1.1.0 - released May 27, 2013 : Improvements to include Matrix compatibility and a bug fix.</p>
+<p>1.0.0 - released May 26, 2013 : Initial Release</p>
+<p>## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##<br />
+  ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## </p>
+<p><strong>## CREDITS</strong></p>
+<p>* Full credit to Max Lazar for beginning &amp; developing this project several years ago. This add-on is based off his 'MX Stars Field' add-on for EE1/EE2.</p>
+<p>* This add-on is maintained by John Derrick - www.johncderrick.com and at Git at https://github.com/JCDerrick/font-awesome-star-rank</p>
+
+
+
+</body>
+</html>
